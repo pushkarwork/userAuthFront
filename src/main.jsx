@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import Login from './components/Login/Login.jsx';
 import Register from './components/register/Register.jsx';
+import About from './components/about/About.jsx';
+
 
 
 const router = createBrowserRouter([
@@ -17,7 +19,7 @@ const router = createBrowserRouter([
   },
   { path: '/login', element: <Login /> },
   { path: '/register', element: <Register /> },
-  // { path: '/create', element: <CreateNoteForm /> }
+  { path: '/about', element: <About /> }
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
